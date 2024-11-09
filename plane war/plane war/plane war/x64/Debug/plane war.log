@@ -1,0 +1,4 @@
+﻿  FileName.cpp
+C:\Users\Y9000P\Desktop\plane war\plane war\FileName.cpp(106,22): warning C4018: “>”: 有符号/无符号不匹配
+C:\Users\Y9000P\Desktop\plane war\plane war\FileName.cpp(179,9): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
+  plane war.vcxproj -> C:\Users\Y9000P\Desktop\plane war\plane war\x64\Debug\plane war.exe

@@ -1,0 +1,34 @@
+#include<stdio.h>
+#include<easyx.h>
+#include<stdlib.h>
+#include<math.h>
+#define GRID_W 100
+#define INTERVAL 20
+#define MAX_SIZE 4
+#define GAME_ZONE MAX_SIZE*GRID_W(MAX_SIZE+1)*INTERVAL
+enum color
+{
+	BLANK_GRID = RGB(215,203,190),
+	INTERVRL_COLOR = RGB(187,173,160),
+	RIGHT_RECTANGLE = RGB(250,248,219),
+	SCORE_COLOR = RGB(187,173,160),
+	NEWGAME_COLOR = RGB(143,122,102),
+	TWO_ONE = RGB(238, 228, 218),
+	TWO_TWO = RGB(237, 224, 200),
+	TWO_THREE = RGB(242, 177, 121),
+	TWO_FOUR = RGB(245, 149, 99),
+	TWO_FIVE = RGB(246, 124, 95),
+	TWO_SIX = RGB(246, 94, 59),
+	TWO_SEVEN = RGB(237, 207, 114),
+	TWO_NIGHT = RGB(237, 204, 97),
+	TWO_NINE = RGB(237, 200, 80),
+	TWO_TEN = RGB(237, 197, 63),
+	TWO_ELEVEN = RGB(237, 194, 46),
+};
+color arr[12] = { BLANK_GRID,TWO_ONE,TWO_TWO,TWO_THREE,TWO_FOUR,TWO_FIVE,TWO_SIX,TWO_SEVEN,TWO_NIGHT,TWO_NINE,TWO_TEN,TWO_ELEVEN, };
+int map[MAX_SIZE][MAX_SIZE];
+int score;
+void createNum();
+void gameInit();
+void gameView();
+void
